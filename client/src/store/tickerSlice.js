@@ -5,7 +5,6 @@ const initialState = {
     tickers: []
 }
 
-
 const tickerSlice = createSlice({
     name: 'tickerSlice',
     initialState,
