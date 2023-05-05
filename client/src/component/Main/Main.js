@@ -26,10 +26,10 @@ const Main = () => {
         'Name',
         'Price',
         'Change',
-        'Change_percent',
+        'Percent',
         'Dividend',
         'Yield',
-        'last_trade_time',
+        'Last trade',
     ]
 
 
