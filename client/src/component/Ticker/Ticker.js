@@ -27,12 +27,15 @@ const Ticker = ({tick}) => {
 
     return (
         <div className={'ticker'}>
-            <h2>{changeName(tick.ticker)}</h2>
-            <h3>{tick.ticker} </h3>
-            <div>Price: {tick.price} $</div>
-            <div>Change %: {tick.change_percent}</div>
-            <div>Dividend: {tick.dividend}</div>
-            <div>Date and time: {tick.last_trade_time}</div>
+            <h4>{tick.ticker} </h4>
+            <h4>{tick.exchange} </h4>
+            <h4>{changeName(tick.ticker)}</h4>
+            <h4>{tick.price} $</h4>
+            <h4>{tick.change} $</h4>
+            <h4>{tick.change_percent} %</h4>
+            <h4>{tick.dividend}</h4>
+            <h4>{tick.yield}</h4>
+            <h4>{tick.last_trade_time}</h4>
         </div>
     );
 };

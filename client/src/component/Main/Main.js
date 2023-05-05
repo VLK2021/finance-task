@@ -18,16 +18,36 @@ const Main = () => {
         socket.on('ticker', function (data) {
             dispatch(getTickers(data));
         });
-    }, []);
+    }, [dispatch]);
+
+    const names = [
+        'Ticker',
+        'Exchange',
+        'Name',
+        'Price',
+        'Change',
+        'Change_percent',
+        'Dividend',
+        'Yield',
+        'last_trade_time',
+    ]
 
 
     return (
         <div className={'main'}>
             <h1>finance test task</h1>
 
-            <div className={'block'}>{
-                tickers && tickers.map(tick => <Ticker tick={tick}/>)
-            }</div>
+            <div className={'names'}>
+                {
+                    names.map(tick => <h3 className={'names-one'}>{tick}</h3>)
+                }
+            </div>
+
+            <div className={'block'}>
+                {
+                    tickers && tickers.map(tick => <Ticker tick={tick}/>)
+                }
+            </div>
         </div>
     );
 };

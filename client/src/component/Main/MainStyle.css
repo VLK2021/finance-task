@@ -8,13 +8,29 @@
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 0.2rem 0.2rem 0.2rem grey;
+    margin-top: 2rem;
 }
 
 .block{
     width: 100%;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+.names{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    margin-top: 3rem;
+}
+
+.names-one{
+    width: 12%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0 0 0;
+
 }
 
